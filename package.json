@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "if it run, it means your server running perfectly",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
