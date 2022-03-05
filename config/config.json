@@ -20,12 +20,6 @@
     "database": "damvmmcc7e59vp",
     "host": "ec2-34-232-144-162.compute-1.amazonaws.com",
     "URI": "postgres://hshetoytozoeca:748a6cb7d8f91adbbfb06f582119283fd4dce93fef121ae0313801ff7e4113e6@ec2-34-232-144-162.compute-1.amazonaws.com:5432/damvmmcc7e59vp",
-    "dialect": "postgre",
-    "dialectOption": {
-      "ssl": {
-        "require": true,
-        "rejectUnauthorized": false
-      }
-    }
+    "dialect": "postgre"
   }
 }
