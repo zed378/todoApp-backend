@@ -1,0 +1,30 @@
+{
+  "name": "todoapp-backend",
+  "version": "1.0.0",
+  "description": "back end process for handling CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "if it run, it means your server running perfectly",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zed378/todoApp-backend.git"
+  },
+  "author": "Zed Trueblood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zed378/todoApp-backend/issues"
+  },
+  "homepage": "https://github.com/zed378/todoApp-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0",
+    "sequelize-cli": "^6.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
