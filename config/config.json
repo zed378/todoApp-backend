@@ -4,18 +4,18 @@
     "password": null,
     "database": "todoApp",
     "host": "127.0.0.1",
-    "dialect": "postgre"
+    "dialect": "postgres"
   },
   "test": {
     "username": "root",
     "password": null,
     "database": "todoApp",
     "host": "127.0.0.1",
-    "dialect": "postgre"
+    "dialect": "postgres"
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
-    "dialect": "postgre",
+    "dialect": "postgres",
     "dialectOption": {
       "ssl": {
         "require": true,
