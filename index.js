@@ -11,6 +11,6 @@ app.use("/api/v1.0/", router);
 // test if deploy success
 app.get("/", (req, res) => res.send("Endpoint Todo App"));
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.debug(`Server running on port: ${port}`));
