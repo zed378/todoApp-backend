@@ -40,12 +40,14 @@ exports.addTask = async (req, res) => {
 
 exports.editTask = async (req, res) => {
   try {
-    const { id } = req.params;
-    const name = req.body;
+    const { id, name } = req.params;
 
-    await task.update(name, {
-      where: { id },
-    });
+    await task.update(
+      { name },
+      {
+        where: { id },
+      }
+    );
 
     res.send({
       status: "Success",

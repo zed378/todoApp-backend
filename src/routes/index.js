@@ -12,7 +12,7 @@ const {
 
 router.get("/tasks", getTasks);
 router.post("/task/:name", addTask);
-router.patch("/task/:id", editTask);
+router.patch("/task/:id/:name", editTask);
 router.patch("/isdone/:id", isDone);
 router.delete("/task/:id", delTask);
 
