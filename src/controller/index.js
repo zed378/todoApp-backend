@@ -57,6 +57,19 @@ exports.editTask = async (req, res) => {
   }
 };
 
+exports.isDone = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    await task.update({ isDone: 1 }, { where: { id } });
+  } catch (error) {
+    res.send({
+      status: "Failed",
+      message: "Server Error",
+    });
+  }
+};
+
 exports.delTask = async (req, res) => {
   try {
     const { id } = req.params;
