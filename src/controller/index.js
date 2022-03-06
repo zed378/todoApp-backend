@@ -8,8 +8,6 @@ exports.getTasks = async (req, res) => {
       },
     });
 
-    data = JSON.parse(JSON.stringify(data));
-
     res.send({
       status: "Success",
       data,
