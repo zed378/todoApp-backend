@@ -22,7 +22,9 @@ exports.getTasks = async (req, res) => {
 
 exports.addTask = async (req, res) => {
   try {
-    const data = await task.create(req.body);
+    const { name } = req.params;
+
+    const data = await task.create({ name });
 
     res.send({
       status: "Success",

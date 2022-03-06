@@ -11,7 +11,7 @@ const {
 } = require("../controller");
 
 router.get("/tasks", getTasks);
-router.post("/task", addTask);
+router.post("/task/:name", addTask);
 router.patch("/task/:id", editTask);
 router.patch("/isdone/:id", isDone);
 router.delete("/task/:id", delTask);
