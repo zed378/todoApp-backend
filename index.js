@@ -6,9 +6,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// test if deploy success
-// app.get("/", (req, res) => res.send("Endpoint Todo App"));
-
 app.use("/api/v1.0/", router);
 
 const port = process.env.PORT || 5000;
