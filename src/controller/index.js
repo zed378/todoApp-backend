@@ -62,6 +62,11 @@ exports.isDone = async (req, res) => {
     const { id } = req.params;
 
     await task.update({ isDone: 1 }, { where: { id } });
+
+    res.send({
+      status: "Success",
+      message: "Update to isDone success",
+    });
   } catch (error) {
     res.send({
       status: "Failed",
