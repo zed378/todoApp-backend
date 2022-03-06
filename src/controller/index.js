@@ -42,12 +42,9 @@ exports.editTask = async (req, res) => {
   try {
     const { id, name } = req.params;
 
-    await task.update(
-      { name },
-      {
-        where: { id },
-      }
-    );
+    await task.update(name, {
+      where: { id },
+    });
 
     res.send({
       status: "Success",
